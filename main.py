@@ -3,7 +3,7 @@ import search
 import tests
 
 def main():
-    tests.testTriABulles()
+    tests.testRechercheDichotomique()
     
 
 if __name__ == '__main__':

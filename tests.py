@@ -1,6 +1,8 @@
 import sorts
 import search
 
+# Tester les tris implémentés
+
 def testTriInsertion():
     print("Test du Tri Insertion")
     A = [31, 41, 59, 26, 41, 58]
@@ -14,13 +16,6 @@ def testTriInsertionInverse():
     B = sorts.triInsertionInverse(A)
     print("A = " + str(A))
     print("B = " + str(B))
-
-def testRechercheLineaire():
-    A = [31, 41, 59, 26, 41, 58]
-    x = 59
-    y = 1
-    print("rechercheLineaire, x = " + str(x) + ", retourne = " + str(search.rechercheLineaire(A,x)))
-    print("rechercheLineaire, y = " + str(y) + ", retourne = " + str(search.rechercheLineaire(A,y)))
 
 def testEchanger():
     T = [31, 41, 59, 26, 41, 58]
@@ -53,3 +48,21 @@ def testTriABulles():
     print("Avant tri à bulles : T = " + str(T))
     T = sorts.triABulles(T)
     print("Après tri à bulles : T = " + str(T))
+
+def testRechercheLineaire():
+    A = [31, 41, 59, 26, 41, 58]
+    x = 59
+    y = 1
+    print("A = " + str(A))
+    print("rechercheLineaire dans A, x = " + str(x) + ", retourne = " + str(search.rechercheLineaire(A,x)))
+    print("rechercheLineaire dans A, y = " + str(y) + ", retourne = " + str(search.rechercheLineaire(A,y)))
+
+def testRechercheDichotomique():
+    A = [26, 31, 41, 41, 59, 58]
+    x = 41
+    y = 59
+    z = 1
+    print("A = " + str(A))
+    print("rechercheDichotomique dans A, x = " + str(x) + ", retourne = " + str(search.rechercheLineaire(A,x)))
+    print("rechercheDichotomique dans A, y = " + str(y) + ", retourne = " + str(search.rechercheLineaire(A,y)))
+    print("rechercheDichotomique dans A, z = " + str(z) + ", retourne = " + str(search.rechercheLineaire(A,z)))
